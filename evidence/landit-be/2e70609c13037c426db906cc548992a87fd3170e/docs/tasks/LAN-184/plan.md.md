@@ -1,0 +1,68 @@
+# plan.md — 공개 근거 발췌
+
+- 원본 저장소: `landit-be` (비공개).
+- 원본 커밋: `2e70609c13037c426db906cc548992a87fd3170e`.
+- 원본 경로: `docs/tasks/LAN-184/plan.md`.
+- 공개 이전일: 2026-10-15.
+- 아래 행 번호는 원본 기준이다. 생략된 부분은 별도 구간으로 표시하며, 이 문서는 실행 가능한 전체 프로젝트가 아니다.
+
+## 원본 1–55행
+
+
+````markdown
+# LAN-184 구현 및 검증 기록
+
+## 최종 구현 범위
+
+- 앱 설치 단위 Push Device 동기화 API와 Expo Token·ON/OFF 상태를 구현했다.
+- 매일 20시 EventBridge가 `SCHEDULED_NOTIFICATION_BATCH` 한 건을 Push Queue에 발행한다.
+- 기존 API 서버의 `PushNotificationConsumer`가 예약 배치와 `PUSH_RECEIPT_CHECK`만 처리한다. 별도 Worker는 만들지 않는다.
+- 예약 배치는 활성 사용자를 `userProfileId` Keyset Pagination으로 500명씩 조회한다. 각 페이지에서 학습 후보·발송 가능한 기기를 일괄 조회하고, 사용자별 알림 하나를 선정한다.
+- 선정 결과는 `user_notification_state`에 스냅샷으로 저장한다. 실제 발송은 기기별 `push_delivery` 멱등성 이력을 먼저 선점한 뒤, 여러 사용자의 기기를 합쳐 Expo에 최대 100건씩 직접 요청한다.
+- 사용자별 `PUSH_SEND` Queue 메시지는 만들지 않는다. `PUSH_RECEIPT_CHECK`만 900초 지연 발행한다.
+- 일시적인 Expo 오류는 발송 이력에 재시도 표식을 남기고 예약 배치 SQS 재전달로 복구한다. 이미 Ticket을 접수한 이력은 Expo에 다시 보내지 않고 Receipt 확인만 다시 예약한다.
+- dev 테스트 API는 로그인 사용자의 `TEST_NOTIFICATION`을 `NotificationDispatchService`로 직접 요청한다.
+
+## 학습 알림 정책
+
+| 유형 | 선택 결과 | 딥링크 |
+| --- | --- | --- |
+| `CONTINUE_SCENARIO` | 접근 가능한 다음 미완료 시나리오 | `/conversation/{scenarioId}` |
+| `CONTINUE_EXPRESSION` | 부모 시나리오가 `CLEARED`인 다음 미완료 표현 | `/expressions/{expressionId}` |
+| `REVIEW_LEARNING` | 활성 콘텐츠가 있고 이어 하기 후보를 모두 완료한 상태 | `/home` |
+
+- 최근 학습 활동은 실제 시나리오·표현 완료 시각만 사용한다. 조회·시작·알림 탭은 제외한다.
+- 최근 완료 유형의 후보를 우선하고, 후보가 없으면 다른 이어 하기 유형으로 대체한다.
+- 신규 사용자는 접근 가능한 첫 미완료 시나리오를 선택한다.
+- 활성 시나리오와 표현이 모두 없는 경우에는 `REVIEW_LEARNING`도 보내지 않는다.
+
+## 현재 구현 상태
+
+| 영역 | 상태 |
+| --- | --- |
+| Push Device API와 OpenAPI | 구현·테스트 완료 |
+| 대상 선정과 `user_notification_state` | 구현·테스트 완료 |
+| 500명 페이지 처리와 Expo 100건 배치 | 구현·테스트 완료 |
+| Ticket·Receipt·Token 무효화·DLQ 계약 | 구현·테스트 완료 |
+| dev 테스트 API | 구현 완료 |
+| dev·prod Scheduler | IaC에서 `DISABLED` 유지 |
+
+현재 구현은 `feat/LAN-184-push-device-sync`부터 `feat/LAN-184-scheduled-learning`까지의 스택 PR로 구성한다. 각 브랜치는 앞선 스택 PR을 기준으로 하며, 최종 병합 전에 스택 순서와 base branch를 다시 확인한다.
+
+## 검증 결과
+
+- `./gradlew check`가 통과했다.
+- `git diff --check`가 통과했다.
+- 신규 사용자, 최근 시나리오·표현 완료, fallback, 카테고리별 잠금, 표현 부모 시나리오 조건, 완주자, 콘텐츠 0건을 테스트했다.
+- 다중 기기, 500명 페이지 경계, Push Device 일괄 조회, 여러 사용자 Expo 100건 분할, SQS 중복 전달 멱등성을 테스트했다.
+
+## 배포 및 E2E 남은 작업
+
+- [ ] 스택 PR을 순서대로 병합하고 dev에 배포한다.
+- [ ] 배포 전 Push Queue와 DLQ에 과거 `PUSH_SEND` 메시지가 남아 있지 않은지 확인한다. 새 Handler는 이를 처리하지 않으며, 남은 메시지는 DLQ로 이동한다.
+- [ ] dev Scheduler를 활성화하기 전에 인증 사용자·Push Device·Queue 소비·Expo 환경 변수를 확인한다.
+- [ ] iOS와 Android 실기기에서 dev 테스트 API와 20시 예약 알림을 수신한다.
+- [ ] 알림 탭 시 `/conversation/{id}`, `/expressions/{id}`, `/home` 딥링크와 UTM 값이 보존되는지 확인한다.
+- [ ] 중복 예약 배치, Expo 일시 오류, Receipt 지연과 Push DLQ 이동을 dev에서 확인한다.
+- [ ] dev E2E 이후 prod Scheduler 활성화 계획을 검토한다.
+````

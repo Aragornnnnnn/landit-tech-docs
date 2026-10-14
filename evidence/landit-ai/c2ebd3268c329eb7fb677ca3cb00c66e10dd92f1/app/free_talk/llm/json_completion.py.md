@@ -1,0 +1,266 @@
+# json_completion.py — 공개 근거 발췌
+
+- 원본 저장소: `landit-ai` (비공개).
+- 원본 커밋: `c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1`.
+- 원본 경로: `app/free_talk/llm/json_completion.py`.
+- 공개 이전일: 2026-10-15.
+- 아래 행 번호는 원본 기준이다. 생략된 부분은 별도 구간으로 표시하며, 이 문서는 실행 가능한 전체 프로젝트가 아니다.
+
+## 원본 1–253행
+
+
+````python
+# 프리톡 LLM의 JSON 응답 호출과 기본 계약 검증을 담당하는 모듈
+import json
+import logging
+
+from json import JSONDecodeError
+from typing import Any, Literal
+
+from pydantic import BaseModel, ValidationError
+
+from app.common.observation_context import bind_model, preserve_failure
+from app.common.failure_observation import observe
+from app.free_talk.llm.completion_attempts import CompletionAttempts
+from app.core.config import Settings
+from app.core.openai_client import create_openai_client
+from app.core.structured_output import (
+    json_schema_response_format,
+    structured_outputs_unsupported,
+)
+
+
+logger = logging.getLogger(__name__)
+
+
+class AiResponseInvalidError(Exception):
+    """AI 응답이 JSON 계약을 만족하지 않을 때 발생한다."""
+
+    def __init__(
+        self,
+        message: str | None = None,
+        *,
+        raw_content: str | None = None,
+    ) -> None:
+        self.reason = message or "schema_validation"
+        if message is None:
+            super().__init__()
+        else:
+            super().__init__(message)
+        self.raw_content = raw_content
+
+
+class AiGenerationFailedError(Exception):
+    """AI 호출 자체가 실패했을 때 발생한다."""
+
+
+@preserve_failure
+def request_json_completion(
+    *,
+    settings: Settings,
+    system_prompt: str,
+    user_prompt: str,
+    reasoning_effort: Literal["low", "medium"] | None = None,
+    response_model: type[BaseModel] | None = None,
+    schema_name: str = "free_talk_json_response",
+    workflow: str = "free_talk_json_completion",
+    max_attempts: int = 2,
+    retry_schema_violations: bool = True,
+    model: str | None = None,
+    timeout_seconds: float | None = None,
+    diagnostics: CompletionAttempts | None = None,
+) -> dict[str, object]:
+    bind_model(settings.llm_provider, None)
+    model = _resolved_model(settings, model)
+    bind_model(settings.llm_provider, model)
+    # 호출자가 진단을 제공하면 JSON 이후 도메인 검증과 교정까지 같은 기록을 유지한다.
+    attempts = diagnostics if diagnostics is not None else CompletionAttempts(workflow)
+    try:
+        # timeout을 주면 SDK 재시도 없이 그 시간 안에 끝내거나 실패한다 (보조 판정용).
+        client = create_openai_client(settings, timeout=timeout_seconds)
+        request = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": 0,
+        }
+        if reasoning_effort is not None:
+            request["extra_body"] = {"reasoning": {"effort": reasoning_effort, "exclude": True}}
+            request["max_completion_tokens"] = 4096
+        if attempts.enabled:
+            request["max_completion_tokens"] = 4096
+        if response_model is None:
+            request["response_format"] = {"type": "json_object"}
+            completion = _create_completion(client, request, attempts)
+            return _parse_json_object(_extract_content(completion))
+
+        request["response_format"] = json_schema_response_format(
+            response_model,
+            name=schema_name,
+        )
+        for attempt in range(1, max_attempts + 1):
+            try:
+                completion = _create_completion(client, request, attempts)
+            except Exception as exc:
+                if not structured_outputs_unsupported(exc):
+                    raise
+                logger.warning(
+                    "Structured Outputs를 지원하지 않아 json_object로 전환합니다. "
+                    "event=structured_output_fallback workflow=%s provider=%s model=%s "
+                    "fromFormat=json_schema toFormat=json_object "
+                    "attempt=%s maxAttempts=%s",
+                    workflow,
+                    settings.llm_provider,
+                    model,
+                    attempt,
+                    max_attempts,
+                )
+                request["response_format"] = {"type": "json_object"}
+                try:
+                    completion = _create_completion(client, request, attempts)
+                except Exception as fallback_exc:
+                    if not structured_outputs_unsupported(fallback_exc):
+                        raise
+                    logger.warning(
+                        "json_object를 지원하지 않아 기존 프롬프트 방식으로 전환합니다. "
+                        "event=structured_output_fallback workflow=%s provider=%s "
+                        "model=%s fromFormat=json_object toFormat=prompt "
+                        "attempt=%s maxAttempts=%s",
+                        workflow,
+                        settings.llm_provider,
+                        model,
+                        attempt,
+                        max_attempts,
+                    )
+                    request.pop("response_format", None)
+                    completion = _create_completion(client, request, attempts)
+                data = _parse_json_object(_extract_content(completion))
+                observe(workflow=workflow, failure_stage="output_format", reason="format_fallback",
+                        outcome="recovered", attempt=attempt)
+                return data
+            try:
+                data = _parse_json_object(_extract_content(completion))
+            except AiResponseInvalidError as exc:
+                attempts.failure(exc.reason)
+                logger.warning(
+                    "Structured Outputs JSON 형식 검증에 실패했습니다. "
+                    "event=json_format_failure workflow=%s provider=%s model=%s "
+                    "reason=%s attempt=%s maxAttempts=%s",
+                    workflow,
+                    settings.llm_provider,
+                    model,
+                    type(exc).__name__,
+                    attempt,
+                    max_attempts,
+                )
+                if attempt == max_attempts:
+                    raise
+                logger.warning(
+                    "Structured Outputs JSON 형식 오류를 재시도합니다. "
+                    "event=structured_output_retry workflow=%s provider=%s model=%s "
+                    "nextAttempt=%s maxAttempts=%s",
+                    workflow,
+                    settings.llm_provider,
+                    model,
+                    attempt + 1,
+                    max_attempts,
+                )
+                continue
+            schema_valid = True
+            try:
+                response_model.model_validate(data)
+            except ValidationError as exc:
+                attempts.failure("schema_validation")
+                schema_valid = False
+                reason = exc.errors()[0]["type"] if exc.errors() else "validation_error"
+                logger.warning(
+                    "Structured Outputs schema 검증에 실패했습니다. "
+                    "event=schema_validation_failure workflow=%s provider=%s model=%s "
+                    "reason=%s attempt=%s maxAttempts=%s",
+                    workflow,
+                    settings.llm_provider,
+                    model,
+                    reason,
+                    attempt,
+                    max_attempts,
+                )
+                if retry_schema_violations and attempt < max_attempts:
+                    logger.warning(
+                        "Structured Outputs schema 위반을 재시도합니다. "
+                        "event=structured_output_retry workflow=%s provider=%s model=%s "
+                        "nextAttempt=%s maxAttempts=%s",
+                        workflow,
+                        settings.llm_provider,
+                        model,
+                        attempt + 1,
+                        max_attempts,
+                    )
+                    continue
+            if schema_valid and attempt > 1:
+                observe(workflow=workflow, failure_stage="output_validation", reason="json_repaired",
+                        outcome="recovered", attempt=attempt)
+            return data
+    except AiResponseInvalidError as exc:
+        attempts.failure(exc.reason)
+        raise
+    except Exception as exc:
+        logger.warning(
+            "프리톡 AI 응답 생성에 실패했습니다. provider=%s model=%s",
+            settings.llm_provider,
+            model,
+        )
+        raise AiGenerationFailedError from exc
+    finally:
+        if diagnostics is None:
+            attempts.log()
+
+    raise AiGenerationFailedError
+
+
+def _create_completion(client, request, attempts):
+    completion = attempts.create(client, request)
+    if attempts.exhausted():
+        raise AiResponseInvalidError("completion_token_limit")
+    return completion
+
+
+def _resolved_model(settings: Settings, override: str | None) -> str:
+    """호출별 모델 지정이 있으면 그것을, 없으면 기본 OPENROUTER_MODEL을 쓴다."""
+    if override is not None and override.strip():
+        return override.strip()
+    return _required_model(settings)
+
+
+def _required_model(settings: Settings) -> str:
+    if settings.openrouter_model is None or not settings.openrouter_model.strip():
+        raise AiGenerationFailedError("OPENROUTER_MODEL is required.")
+    return settings.openrouter_model
+
+
+def _extract_content(completion: Any) -> str:
+    try:
+        content = completion.choices[0].message.content
+    except (AttributeError, IndexError) as exc:
+        raise AiResponseInvalidError("completion content is missing") from exc
+    if not isinstance(content, str) or not content.strip():
+        raise AiResponseInvalidError("completion content is blank")
+    return content.strip()
+
+
+def _parse_json_object(content: str) -> dict[str, object]:
+    try:
+        data = json.loads(content)
+    except JSONDecodeError as exc:
+        raise AiResponseInvalidError(
+            "completion is not valid JSON",
+            raw_content=content,
+        ) from exc
+    if not isinstance(data, dict):
+        raise AiResponseInvalidError(
+            "completion must be a JSON object",
+            raw_content=content,
+        )
+    return data
+````

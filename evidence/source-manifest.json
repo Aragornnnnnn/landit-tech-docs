@@ -1,0 +1,1315 @@
+[
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da",
+    "path": "app/conversation/application/next_message_service.py",
+    "ranges": [
+      [
+        1372,
+        1430
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da/app/conversation/application/next_message_service.py.md",
+    "sourceSha256": "4bbae796281cd8e4aab993b3f3fc97508d66b1866c66984eec2ed22f17db391d"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da",
+    "path": "app/conversation/application/session_assessment_evidence.py",
+    "ranges": [
+      [
+        5,
+        36
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da/app/conversation/application/session_assessment_evidence.py.md",
+    "sourceSha256": "12b5bb38285018b0dd6969537daf4960f0b76c3bfb064c64573ac229510bb63e"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da",
+    "path": "app/conversation/application/session_assessment_rubric.py",
+    "ranges": [
+      [
+        1,
+        62
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da/app/conversation/application/session_assessment_rubric.py.md",
+    "sourceSha256": "358982cfb93284bbce3eb7a3af80567ed5ae9b31fe3d87595952828b4efe4b1d"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da",
+    "path": "docs/tasks/LAN-438/plan.md",
+    "ranges": [
+      [
+        1,
+        52
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da/docs/tasks/LAN-438/plan.md.md",
+    "sourceSha256": "6b881109c1fe6335ca4ecba60bb9c1476411902cbf1b0aba36c33fcd6ecbb25b"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da",
+    "path": "tests/test_conversation_api.py",
+    "ranges": [
+      [
+        4309,
+        4414
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/24b56cb3da1e6bd2e0a42bcc67759ea1ad9f84da/tests/test_conversation_api.py.md",
+    "sourceSha256": "4700497114dc1d2c712b4c0921e71abc8066bd3454c366f00e4e35b5de904378"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "app/core/request_budget.py",
+    "ranges": [
+      [
+        20,
+        76
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/app/core/request_budget.py.md",
+    "sourceSha256": "c50ea468392a839eede8b781863c7f9c084bdc59cbd91ec99c4ae171314cb4ca"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "app/free_talk/application/memory_service.py",
+    "ranges": [
+      [
+        367,
+        440
+      ],
+      [
+        619,
+        734
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/app/free_talk/application/memory_service.py.md",
+    "sourceSha256": "d17ee0285cda96185ccb6b1615c4456828d758f9b7d9dde8934c71e2a6e83965"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "app/free_talk/llm/completion_attempts.py",
+    "ranges": [
+      [
+        1,
+        97
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/app/free_talk/llm/completion_attempts.py.md",
+    "sourceSha256": "e9cacb54157e43c47206e84ce7d4918266fe7782ba2070df2aa8ce9be02c7fd9"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "app/free_talk/llm/json_completion.py",
+    "ranges": [
+      [
+        81,
+        154
+      ],
+      [
+        199,
+        250
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/app/free_talk/llm/json_completion.py.md",
+    "sourceSha256": "5bd105976e2bf30fc2d51262dceae2ec88ebc28a35810120526181d233a3a946"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "app/free_talk/llm/memory_budget.py",
+    "ranges": [
+      [
+        1,
+        18
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/app/free_talk/llm/memory_budget.py.md",
+    "sourceSha256": "d221f5fdd5321bca7cc9d8b033107ba7abc29a3b71579ee9a706c3f04ed39a94"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "docs/tasks/LAN-566/plan.md",
+    "ranges": [
+      [
+        1,
+        42
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/docs/tasks/LAN-566/plan.md.md",
+    "sourceSha256": "285cad5d991c45a3a90f50993ac898b46a8ff47f5130c1f32a2022d5d43b602b"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "tests/test_free_talk_api.py",
+    "ranges": [
+      [
+        946,
+        1068
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/tests/test_free_talk_api.py.md",
+    "sourceSha256": "6691cd1496c839cb72587b9b698393fd436814f8570cbfbec359a41a26f68b8f"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "tests/test_memory_completion_budget.py",
+    "ranges": [
+      [
+        28,
+        67
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/tests/test_memory_completion_budget.py.md",
+    "sourceSha256": "8209729863f743cad3a0918647e449c3dd58aa6d2247b5674caa2d78eb2d96c7"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "ba5ae416828782b7bf3ff522d522adabaeed2715",
+    "path": "tests/test_memory_http_budget.py",
+    "ranges": [
+      [
+        1,
+        113
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/ba5ae416828782b7bf3ff522d522adabaeed2715/tests/test_memory_http_budget.py.md",
+    "sourceSha256": "d95c5bb1507ffae4a180febee7459e987635fe8e66ead36565fe214050c3ebda"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/conversation/application/session_assessment_evidence.py",
+    "ranges": [
+      [
+        1,
+        50
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/conversation/application/session_assessment_evidence.py.md",
+    "sourceSha256": "12b5bb38285018b0dd6969537daf4960f0b76c3bfb064c64573ac229510bb63e"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/conversation/application/session_assessment_rubric.py",
+    "ranges": [
+      [
+        1,
+        62
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/conversation/application/session_assessment_rubric.py.md",
+    "sourceSha256": "358982cfb93284bbce3eb7a3af80567ed5ae9b31fe3d87595952828b4efe4b1d"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/core/logging.py",
+    "ranges": [
+      [
+        1,
+        21
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/core/logging.py.md",
+    "sourceSha256": "2beac3277f2e872ae4ccb0478b82235261ca890c3d9e6134a8aa94c26b1d3e48"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/core/request_budget.py",
+    "ranges": [
+      [
+        1,
+        76
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/core/request_budget.py.md",
+    "sourceSha256": "c50ea468392a839eede8b781863c7f9c084bdc59cbd91ec99c4ae171314cb4ca"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/free_talk/application/memory_service.py",
+    "ranges": [
+      [
+        260,
+        470
+      ],
+      [
+        610,
+        750
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/free_talk/application/memory_service.py.md",
+    "sourceSha256": "40b1b2e63ea6bddfdda99fd0536dcad76220cc3d75503c3462a1d8d18a9b193f"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/free_talk/llm/completion_attempts.py",
+    "ranges": [
+      [
+        1,
+        97
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/free_talk/llm/completion_attempts.py.md",
+    "sourceSha256": "e9cacb54157e43c47206e84ce7d4918266fe7782ba2070df2aa8ce9be02c7fd9"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "app/free_talk/llm/json_completion.py",
+    "ranges": [
+      [
+        1,
+        253
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/app/free_talk/llm/json_completion.py.md",
+    "sourceSha256": "05b03379746d48b085fbf401a09615dd353812afa36d99cf7b95a8c5d379f049"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "tests/test_memory_completion_budget.py",
+    "ranges": [
+      [
+        1,
+        78
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/tests/test_memory_completion_budget.py.md",
+    "sourceSha256": "0e365f802c283e3b1ddc0453106be1d9b2748acbc948394d8818bdac7bfbd890"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "tests/test_memory_http_budget.py",
+    "ranges": [
+      [
+        1,
+        139
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/tests/test_memory_http_budget.py.md",
+    "sourceSha256": "49b0fa3fdf57c4f8176d2748e5e7984e54b6776839c1d4b6bd954cadce949779"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1",
+    "path": "tests/test_memory_source_correction.py",
+    "ranges": [
+      [
+        1,
+        152
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/c2ebd3268c329eb7fb677ca3cb00c66e10dd92f1/tests/test_memory_source_correction.py.md",
+    "sourceSha256": "65ebaf0d37d323ede2c47903d69cda6b7ca70e955aac488e4aeda74994436641"
+  },
+  {
+    "repo": "landit-ai",
+    "sourceCommit": "e524025d431ef214a29bd06bf3cd51a8c12c75cd",
+    "path": "tests/test_free_talk_api.py",
+    "ranges": [
+      [
+        917,
+        975
+      ],
+      [
+        2313,
+        2371
+      ],
+      [
+        2940,
+        2998
+      ],
+      [
+        3109,
+        3193
+      ]
+    ],
+    "publishedPath": "evidence/landit-ai/e524025/tests/test_free_talk_api.py.md",
+    "sourceSha256": "e97afa32fd8c60e9cc240a15f867d0946f3ea59be62d635980a925f9262aaf57"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "docs/tasks/LAN-566/plan.md",
+    "ranges": [
+      [
+        1,
+        17
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/docs/tasks/LAN-566/plan.md.md",
+    "sourceSha256": "97bb16bcdbbb0d3ffe436337b436ab928286a07bda211dbcde2711388d4c808b"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/freetalk/memory/service/FreeTalkMemoryGenerationContextService.java",
+    "ranges": [
+      [
+        141,
+        182
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/main/java/com/landit/landitbe/feature/learning/freetalk/memory/service/FreeTalkMemoryGenerationContextService.java.md",
+    "sourceSha256": "4a765bf24a903f9f772644daca7d83398bcbb36636dfca57ab7d0ee7807fe313"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/main/java/com/landit/landitbe/feature/memory/repository/ConversationMemoryRepository.java",
+    "ranges": [
+      [
+        31,
+        104
+      ],
+      [
+        183,
+        256
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/main/java/com/landit/landitbe/feature/memory/repository/ConversationMemoryRepository.java.md",
+    "sourceSha256": "a0f47f4015f04b7e9c720ad058a46e3da86b1fd264c6a1f360795accdd91c742"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/main/java/com/landit/landitbe/feature/memory/service/ConversationMemoryWriteService.java",
+    "ranges": [
+      [
+        47,
+        171
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/main/java/com/landit/landitbe/feature/memory/service/ConversationMemoryWriteService.java.md",
+    "sourceSha256": "8af90dfa8587e0fffb5fc2686fb9056208f8f974ac06f7e952e0b8086966a3c9"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/main/java/com/landit/landitbe/feature/profile/repository/UserProfileRepository.java",
+    "ranges": [
+      [
+        41,
+        99
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/main/java/com/landit/landitbe/feature/profile/repository/UserProfileRepository.java.md",
+    "sourceSha256": "df5e407dff7dea6a7972a3ac1ac376d815cf8bbb1560cc4db2454c1b353a1b49"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/main/java/com/landit/landitbe/shared/client/ai/AiHttpClient.java",
+    "ranges": [
+      [
+        101,
+        174
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/main/java/com/landit/landitbe/shared/client/ai/AiHttpClient.java.md",
+    "sourceSha256": "7547228e17d0d3c47d8c61fff8c725c0b4c3c7612e161b9c958e1a27747b68f5"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/test/java/com/landit/landitbe/feature/learning/freetalk/domain/FreeTalkSessionTest.java",
+    "ranges": [
+      [
+        118,
+        189
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/test/java/com/landit/landitbe/feature/learning/freetalk/domain/FreeTalkSessionTest.java.md",
+    "sourceSha256": "f8502063aed3a9921807c4acdfa3d4ba312f2a2b72d3c058bab5c2e6f8cf6305"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/test/java/com/landit/landitbe/feature/memory/client/ai/RemoteAiMemoryClientTest.java",
+    "ranges": [
+      [
+        213,
+        344
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/test/java/com/landit/landitbe/feature/memory/client/ai/RemoteAiMemoryClientTest.java.md",
+    "sourceSha256": "42e3fcebe58d7fda646a8b89b8224e0b9444a2d4a10ae9721ecb211bb0574c91"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/test/java/com/landit/landitbe/feature/memory/planning/service/FreeTalkMemoryGenerationServiceTest.java",
+    "ranges": [
+      [
+        279,
+        393
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/test/java/com/landit/landitbe/feature/memory/planning/service/FreeTalkMemoryGenerationServiceTest.java.md",
+    "sourceSha256": "d096cf5b43323c75c549232e0666f68d6d148ad9519b15b8b1602a6492873593"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "010b4ac392ba930d5f14635afc91262b7e48bd99",
+    "path": "src/test/java/com/landit/landitbe/feature/memory/service/ConversationMemoryWriteServiceIntegrationTests.java",
+    "ranges": [
+      [
+        102,
+        250
+      ],
+      [
+        312,
+        409
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/010b4ac392ba930d5f14635afc91262b7e48bd99/src/test/java/com/landit/landitbe/feature/memory/service/ConversationMemoryWriteServiceIntegrationTests.java.md",
+    "sourceSha256": "672e7d25372bf684a514264042080a306ecab84f85d93cf39812f075388e6254"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "259dfab99d6090c8aa3c94b9c51ddaf081b809a1",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicy.java",
+    "ranges": [
+      [
+        1,
+        67
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/259dfab99d6090c8aa3c94b9c51ddaf081b809a1/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicy.java.md",
+    "sourceSha256": "f11ee1c05acb03498234f1c81988f81c5b6aab9850f91659636792c26f31be00"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "259dfab99d6090c8aa3c94b9c51ddaf081b809a1",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/SessionLevelAssessment.java",
+    "ranges": [
+      [
+        1,
+        42
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/259dfab99d6090c8aa3c94b9c51ddaf081b809a1/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/SessionLevelAssessment.java.md",
+    "sourceSha256": "14282f91c9d30287d15eaab1c56661b21a3dec1c3d3ce17c45099c94902a4e26"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "259dfab99d6090c8aa3c94b9c51ddaf081b809a1",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicy.java",
+    "ranges": [
+      [
+        1,
+        139
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/259dfab99d6090c8aa3c94b9c51ddaf081b809a1/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicy.java.md",
+    "sourceSha256": "c8f13d12253a8a4aa4f854c68dc4b71c530ea3975ae06e3c21989f6b2235b357"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "259dfab99d6090c8aa3c94b9c51ddaf081b809a1",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentService.java",
+    "ranges": [
+      [
+        1,
+        192
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/259dfab99d6090c8aa3c94b9c51ddaf081b809a1/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentService.java.md",
+    "sourceSha256": "d80b5ef267bbb38320e0fb456da6317a7cfd11e2a1527e2ff75fc7403b8b5826"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "259dfab99d6090c8aa3c94b9c51ddaf081b809a1",
+    "path": "src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicyTest.java",
+    "ranges": [
+      [
+        84,
+        108
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/259dfab99d6090c8aa3c94b9c51ddaf081b809a1/src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicyTest.java.md",
+    "sourceSha256": "c3501f9d72837f1ef2ece6708f419798c3acbe3a27b7fec4dc451a95be96956d"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "docs/tasks/LAN-184/plan.md",
+    "ranges": [
+      [
+        1,
+        55
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/docs/tasks/LAN-184/plan.md.md",
+    "sourceSha256": "f2ebcfd6d27e45049d52075848e4b383dba08567dd239ddd4cfca06de1f27419"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/client/expo/ExpoPushClient.java",
+    "ranges": [
+      [
+        1,
+        237
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/src/main/java/com/landit/landitbe/feature/notification/client/expo/ExpoPushClient.java.md",
+    "sourceSha256": "c190a318da76e6b4307a62e9de7bf187b9819416fca83da23cc4fdb8dc23f5f5"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/messaging/PushNotificationConsumer.java",
+    "ranges": [
+      [
+        1,
+        45
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/src/main/java/com/landit/landitbe/feature/notification/messaging/PushNotificationConsumer.java.md",
+    "sourceSha256": "ff8ae2097e8ba344edc84402b410ef7fc18bc1c1abd0bfee125a20852c2a4a93"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/service/PushDeliveryService.java",
+    "ranges": [
+      [
+        1,
+        183
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/src/main/java/com/landit/landitbe/feature/notification/service/PushDeliveryService.java.md",
+    "sourceSha256": "21a33429400bc0a5ea57625edbb7646563751fab3c4cf5bee984bab4270413b2"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/service/PushDeviceService.java",
+    "ranges": [
+      [
+        1,
+        169
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/src/main/java/com/landit/landitbe/feature/notification/service/PushDeviceService.java.md",
+    "sourceSha256": "68b90bd742a3a494f91f7cba8c4db0dcae2631c04610b4da50fe8bc048588a40"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "2e70609c13037c426db906cc548992a87fd3170e",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/service/ScheduledNotificationService.java",
+    "ranges": [
+      [
+        1,
+        155
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/2e70609c13037c426db906cc548992a87fd3170e/src/main/java/com/landit/landitbe/feature/notification/service/ScheduledNotificationService.java.md",
+    "sourceSha256": "0d953ad45c752f336e3dcd1484b3e0178efa74ace89f2ce126da6d63131a49de"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/repository/RewardRepository.java",
+    "ranges": [
+      [
+        200,
+        220
+      ],
+      [
+        637,
+        660
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/repository/RewardRepository.java.md",
+    "sourceSha256": "60bc083caad645c1ed60197deea29f6b9fc182079bdaadbfa62bfe6f21810db5"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardBillingService.java",
+    "ranges": [
+      [
+        1,
+        357
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardBillingService.java.md",
+    "sourceSha256": "7fa0ee3a9a195298846c302eaaac4b9eca1364a0d202b16c906701ddf246c42a"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardHistoryService.java",
+    "ranges": [
+      [
+        27,
+        47
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardHistoryService.java.md",
+    "sourceSha256": "9995825145442aa1a59325d6c9560b34a8a97d47e8dee5a930a626761febda07"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardInboxService.java",
+    "ranges": [
+      [
+        12,
+        30
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardInboxService.java.md",
+    "sourceSha256": "fd393837d310fe58b35f6767a1b4248bbbaa4efe8fc7db2a44ee160d3776fa2a"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardLearningService.java",
+    "ranges": [
+      [
+        1,
+        238
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardLearningService.java.md",
+    "sourceSha256": "fdb2b2d559d8288271827a15e6b7902028bb08261794647682a9b36e11d6dcaf"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardMaintenanceService.java",
+    "ranges": [
+      [
+        1,
+        63
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardMaintenanceService.java.md",
+    "sourceSha256": "9662f63424662e6283baae6619c8959b8c6e2362c69d55e9b8f4a8238d821ab2"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardQueryService.java",
+    "ranges": [
+      [
+        28,
+        39
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/java/com/landit/landitbe/feature/reward/service/RewardQueryService.java.md",
+    "sourceSha256": "373127e7f8642a2c4c08290c501c0cbff5950d69af5da02b6cfb26c63fe2d785"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "33ee6ceed257d9233f569f11184d0acaee3ec362",
+    "path": "src/main/resources/db/postgresql/V153_4__invalidate_reward_settlement.sql",
+    "ranges": [
+      [
+        1,
+        61
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/33ee6ceed257d9233f569f11184d0acaee3ec362/src/main/resources/db/postgresql/V153_4__invalidate_reward_settlement.sql.md",
+    "sourceSha256": "8382704f2781fd193977b301df01bb83267b9f1e6ddd3d4be7257fd103d8abdc"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "docs/tasks/LAN-468/plan.md",
+    "ranges": [
+      [
+        1,
+        77
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/docs/tasks/LAN-468/plan.md.md",
+    "sourceSha256": "c8632e2d022d40cf95ddd56615c7f6d38f63b7636b03888095f6eed3b0db9f6e"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/messaging/SqsPushQueuePublisher.java",
+    "ranges": [
+      [
+        1,
+        174
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/main/java/com/landit/landitbe/feature/notification/messaging/SqsPushQueuePublisher.java.md",
+    "sourceSha256": "c0c18353b75d068f5b6318751cfeffa760a484dad7a53d555495ab8c44ef1e7e"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/repository/PushDeliveryBatchRepository.java",
+    "ranges": [
+      [
+        1,
+        159
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/main/java/com/landit/landitbe/feature/notification/repository/PushDeliveryBatchRepository.java.md",
+    "sourceSha256": "23b97655b692cc4ab92ea9703f8f5ab1adf2153796e69fa46d7d6c73f4f714b1"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/service/NotificationDispatchService.java",
+    "ranges": [
+      [
+        1,
+        331
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/main/java/com/landit/landitbe/feature/notification/service/NotificationDispatchService.java.md",
+    "sourceSha256": "3742af1301cb289e8321ab389e4639f6defb9a592d288f81012a3e8fbb9114c6"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/service/PushDeliveryService.java",
+    "ranges": [
+      [
+        1,
+        381
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/main/java/com/landit/landitbe/feature/notification/service/PushDeliveryService.java.md",
+    "sourceSha256": "a03e6b89005e9ca6995ea20a7b85bbf4cd09b2d2d28f008ba31198e607ada88d"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/test/java/com/landit/landitbe/feature/notification/service/NotificationDispatchServiceTest.java",
+    "ranges": [
+      [
+        1,
+        449
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/test/java/com/landit/landitbe/feature/notification/service/NotificationDispatchServiceTest.java.md",
+    "sourceSha256": "0cce2b1b1f78f08bd2ca7d0eee4dc7ef3f11395103294eeea267f8b1304f2633"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "ab74c3a425635157673b65ead99bbc9ce2eb75da",
+    "path": "src/test/java/com/landit/landitbe/feature/notification/service/PushDeliveryBatchIntegrationTests.java",
+    "ranges": [
+      [
+        158,
+        362
+      ],
+      [
+        367,
+        477
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/ab74c3a425635157673b65ead99bbc9ce2eb75da/src/test/java/com/landit/landitbe/feature/notification/service/PushDeliveryBatchIntegrationTests.java.md",
+    "sourceSha256": "d739fed5bee950db7452d75a743a61158373374c57cca65b92a17a5d58181780"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/content/scenario/question/domain/ResponseDemand.java",
+    "ranges": [
+      [
+        1,
+        23
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/content/scenario/question/domain/ResponseDemand.java.md",
+    "sourceSha256": "a536d2042565382130124f55bf1f0e25d8b16cd5f46af0329b235c256e2b33e8"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/SessionController.java",
+    "ranges": [
+      [
+        1,
+        78
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/SessionController.java.md",
+    "sourceSha256": "c95d1cf79ed89ec3aa27cde0a49f4d085c1265774389cd997438289d1eb98422"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicy.java",
+    "ranges": [
+      [
+        1,
+        67
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicy.java.md",
+    "sourceSha256": "f11ee1c05acb03498234f1c81988f81c5b6aab9850f91659636792c26f31be00"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/SessionLevelAssessment.java",
+    "ranges": [
+      [
+        1,
+        42
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/SessionLevelAssessment.java.md",
+    "sourceSha256": "14282f91c9d30287d15eaab1c56661b21a3dec1c3d3ce17c45099c94902a4e26"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicy.java",
+    "ranges": [
+      [
+        1,
+        139
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicy.java.md",
+    "sourceSha256": "c8f13d12253a8a4aa4f854c68dc4b71c530ea3975ae06e3c21989f6b2235b357"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/UserLevelAssessment.java",
+    "ranges": [
+      [
+        1,
+        202
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/UserLevelAssessment.java.md",
+    "sourceSha256": "fa8dc38c6121b8222258e1def833daf54e6455ba59f8591e2bf796137cf4b2c1"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/repository/UserLevelAssessmentRepository.java",
+    "ranges": [
+      [
+        1,
+        49
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/repository/UserLevelAssessmentRepository.java.md",
+    "sourceSha256": "cb095c8ae3d164ca50b25dc98ad3eabdc2a06366e4595c1d6bc76f5c9df01f27"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentGenerationService.java",
+    "ranges": [
+      [
+        1,
+        244
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentGenerationService.java.md",
+    "sourceSha256": "be8489606d72d77cbb027c6a21601445b485cb8370d567cbf6d85b240754d9e1"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentService.java",
+    "ranges": [
+      [
+        1,
+        192
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/assessment/service/SessionLevelAssessmentService.java.md",
+    "sourceSha256": "d80b5ef267bbb38320e0fb456da6317a7cfd11e2a1527e2ff75fc7403b8b5826"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/feedback/service/SessionFeedbackContextService.java",
+    "ranges": [
+      [
+        1,
+        160
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/learning/scenario/feedback/service/SessionFeedbackContextService.java.md",
+    "sourceSha256": "d32a09f0655f4097d65d6961a2a0e0498e916a39edd3d7380475702d0bff2e54"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/memory/client/ai/RemoteAiMemoryClient.java",
+    "ranges": [
+      [
+        1,
+        91
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/memory/client/ai/RemoteAiMemoryClient.java.md",
+    "sourceSha256": "cac0b0cd57bf434194df9e5ce6bb8111c259ea387600dfb63778350c937d5743"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/delivery/client/expo/ExpoPushClient.java",
+    "ranges": [
+      [
+        1,
+        246
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/delivery/client/expo/ExpoPushClient.java.md",
+    "sourceSha256": "90ab03f205dbca44a499801654c38b593248b1376d956ad8d0d22379541069d3"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/delivery/messaging/SqsPushQueuePublisher.java",
+    "ranges": [
+      [
+        1,
+        174
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/delivery/messaging/SqsPushQueuePublisher.java.md",
+    "sourceSha256": "a1e801ed72020caae02ff3071b375e266345784f64ea335622a0ff6482c6a888"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/delivery/service/NotificationDispatchService.java",
+    "ranges": [
+      [
+        1,
+        336
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/delivery/service/NotificationDispatchService.java.md",
+    "sourceSha256": "47abf5fc476e853753084a4b529bfc35f52c9accd2dbcfb3d858bae44c41d27c"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/delivery/service/PushDeliveryService.java",
+    "ranges": [
+      [
+        1,
+        386
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/delivery/service/PushDeliveryService.java.md",
+    "sourceSha256": "097ecd4bb6e0f75d685571efb65b275d15e7f9f7640ef5ff37250afd8df58d42"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/delivery/service/PushReceiptService.java",
+    "ranges": [
+      [
+        1,
+        83
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/delivery/service/PushReceiptService.java.md",
+    "sourceSha256": "c283ccb89ee4056453cacd0e4cffcb4ade2320d3557610118dbb5418899f2f53"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/notification/scheduled/service/ScheduledNotificationService.java",
+    "ranges": [
+      [
+        1,
+        397
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/notification/scheduled/service/ScheduledNotificationService.java.md",
+    "sourceSha256": "73e61371a2e5eae3046dfd167678b7631ee8bd9257f8a086fb5cb4fed4e1e08d"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/feature/subscription/service/SubscriptionLaunchPolicyService.java",
+    "ranges": [
+      [
+        1,
+        53
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/feature/subscription/service/SubscriptionLaunchPolicyService.java.md",
+    "sourceSha256": "d58e3317d2ab7e93e3dde4c79a4c15460f74437e759142416e55a8bfc046c8a9"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/main/java/com/landit/landitbe/shared/client/ai/AiHttpClient.java",
+    "ranges": [
+      [
+        63,
+        105
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/main/java/com/landit/landitbe/shared/client/ai/AiHttpClient.java.md",
+    "sourceSha256": "7547228e17d0d3c47d8c61fff8c725c0b4c3c7612e161b9c958e1a27747b68f5"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicyTest.java",
+    "ranges": [
+      [
+        1,
+        113
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/LearningLevelPolicyTest.java.md",
+    "sourceSha256": "cd08f700945cdbedc6c97066b156a7d0a4ae444f92bca8d2f0801329d7f368d5"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicyTest.java",
+    "ranges": [
+      [
+        1,
+        114
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/test/java/com/landit/landitbe/feature/learning/scenario/assessment/domain/TextLevelAssessmentPolicyTest.java.md",
+    "sourceSha256": "c3501f9d72837f1ef2ece6708f419798c3acbe3a27b7fec4dc451a95be96956d"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/test/java/com/landit/landitbe/feature/notification/delivery/domain/PushDeliveryRetryConcurrencyIntegrationTests.java",
+    "ranges": [
+      [
+        1,
+        222
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/test/java/com/landit/landitbe/feature/notification/delivery/domain/PushDeliveryRetryConcurrencyIntegrationTests.java.md",
+    "sourceSha256": "9069d8592d42e29b5a1d3b8e853bd6f6644437534502f82e58274629756384c4"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "cfb15ec066277ed0baa255395c02c6c0500e99d7",
+    "path": "src/test/java/com/landit/landitbe/feature/notification/delivery/service/NotificationDispatchServiceTest.java",
+    "ranges": [
+      [
+        1,
+        471
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/cfb15ec066277ed0baa255395c02c6c0500e99d7/src/test/java/com/landit/landitbe/feature/notification/delivery/service/NotificationDispatchServiceTest.java.md",
+    "sourceSha256": "52179f4ae5616b4adf512eebdb0398edfbf7f371381d156e287c49ce4ecc7eea"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "de231083e2a2afdb01bcb5bb72f50aa11001c9c4",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardHistoryService.java",
+    "ranges": [
+      [
+        27,
+        47
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/de231083e2a2afdb01bcb5bb72f50aa11001c9c4/src/main/java/com/landit/landitbe/feature/reward/service/RewardHistoryService.java.md",
+    "sourceSha256": "f8c6b3e280fb98894442ec64cb28420fb35d2721cd472798c54ee0c21e858cd8"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "de231083e2a2afdb01bcb5bb72f50aa11001c9c4",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/service/RewardQueryService.java",
+    "ranges": [
+      [
+        364,
+        381
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/de231083e2a2afdb01bcb5bb72f50aa11001c9c4/src/main/java/com/landit/landitbe/feature/reward/service/RewardQueryService.java.md",
+    "sourceSha256": "76a539ffb59c3316b70c085c242cc4a78fcad95044437f808983f2747faba9e6"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "de5fb927810505b74be85faeef96f15484b61fcb",
+    "path": "docs/tasks/LAN-649/plan.md",
+    "ranges": [
+      [
+        21,
+        39
+      ],
+      [
+        41,
+        65
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/de5fb927810505b74be85faeef96f15484b61fcb/docs/tasks/LAN-649/plan.md.md",
+    "sourceSha256": "7ece64e11fcb6b021a81cc84e57ff43a997b9b855cc7e12db63d3ad1ec3ce50b"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "eac4317c00d454b327c6a3e5be482bcf56961297",
+    "path": "docs/tasks/LAN-650/plan.md",
+    "ranges": [
+      [
+        1,
+        24
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/eac4317c00d454b327c6a3e5be482bcf56961297/docs/tasks/LAN-650/plan.md.md",
+    "sourceSha256": "de595d30e95a901651cef84aae14167352b3494e9e9a491b01ef2e5998593cb2"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "eac4317c00d454b327c6a3e5be482bcf56961297",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/selection/service/DailyRewardAssignmentService.java",
+    "ranges": [
+      [
+        24,
+        42
+      ],
+      [
+        56,
+        96
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/eac4317c00d454b327c6a3e5be482bcf56961297/src/main/java/com/landit/landitbe/feature/learning/scenario/selection/service/DailyRewardAssignmentService.java.md",
+    "sourceSha256": "8ebea226905fd3533c4c5ea1acfd98a4223d9300a9b5d93f3c7a44423c1869ab"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "eac4317c00d454b327c6a3e5be482bcf56961297",
+    "path": "src/main/java/com/landit/landitbe/feature/learning/scenario/selection/service/DailyScenarioQueryService.java",
+    "ranges": [
+      [
+        22,
+        40
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/eac4317c00d454b327c6a3e5be482bcf56961297/src/main/java/com/landit/landitbe/feature/learning/scenario/selection/service/DailyScenarioQueryService.java.md",
+    "sourceSha256": "1f7300cebd6372fd2ddf6548f8693dd6aafbb56f6e152b47d70620d6ecb60941"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "eac4317c00d454b327c6a3e5be482bcf56961297",
+    "path": "src/main/java/com/landit/landitbe/feature/reward/domain/RewardCalculator.java",
+    "ranges": [
+      [
+        139,
+        157
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/eac4317c00d454b327c6a3e5be482bcf56961297/src/main/java/com/landit/landitbe/feature/reward/domain/RewardCalculator.java.md",
+    "sourceSha256": "b5b05de1bd768fc380ba6b84b33f79777e10c744bf1858225e0e0a70798836cb"
+  },
+  {
+    "repo": "landit-be",
+    "sourceCommit": "eac4317c00d454b327c6a3e5be482bcf56961297",
+    "path": "src/test/java/com/landit/landitbe/feature/reward/RewardPostgresIntegrationTest.java",
+    "ranges": [
+      [
+        176,
+        313
+      ],
+      [
+        575,
+        601
+      ]
+    ],
+    "publishedPath": "evidence/landit-be/eac4317c00d454b327c6a3e5be482bcf56961297/src/test/java/com/landit/landitbe/feature/reward/RewardPostgresIntegrationTest.java.md",
+    "sourceSha256": "80e3fce3299f2aa1ac8840998e4f6516ec055902b7d8e5126d3bc5effa26771c"
+  },
+  {
+    "repo": "landit-iac",
+    "sourceCommit": "6e85e5f70b61919fb89fc777c10699eb9549a9a5",
+    "path": "docs/push-notifications.md",
+    "ranges": [
+      [
+        1,
+        180
+      ]
+    ],
+    "publishedPath": "evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/docs/push-notifications.md.md",
+    "sourceSha256": "06b8fd82573468ccfeca39ef4185c2927f71b9422514ac26e506faa1b114c336"
+  },
+  {
+    "repo": "landit-iac",
+    "sourceCommit": "6e85e5f70b61919fb89fc777c10699eb9549a9a5",
+    "path": "docs/tasks/LAN-505/plan.md",
+    "ranges": [
+      [
+        1,
+        72
+      ]
+    ],
+    "publishedPath": "evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/docs/tasks/LAN-505/plan.md.md",
+    "sourceSha256": "9a2e0d307549ae88762ade23a2ec5b34370bb9a7b8845f3f41d0fd14029948d5"
+  },
+  {
+    "repo": "landit-iac",
+    "sourceCommit": "6e85e5f70b61919fb89fc777c10699eb9549a9a5",
+    "path": "environments/dev/email.tf",
+    "ranges": [
+      [
+        1,
+        81
+      ]
+    ],
+    "publishedPath": "evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/environments/dev/email.tf.md",
+    "sourceSha256": "ee10e4f33d7abd5d7ba1c483d3909c993b40615939ba9d425fa8797fb1f6aad9"
+  },
+  {
+    "repo": "landit-iac",
+    "sourceCommit": "6e85e5f70b61919fb89fc777c10699eb9549a9a5",
+    "path": "modules/app-platform/email.tf",
+    "ranges": [
+      [
+        1,
+        59
+      ]
+    ],
+    "publishedPath": "evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/modules/app-platform/email.tf.md",
+    "sourceSha256": "62867c6dadb08f84345860bb423832427834dc6b0b4d3afe0d7ec413771849c9"
+  },
+  {
+    "repo": "landit-iac",
+    "sourceCommit": "6e85e5f70b61919fb89fc777c10699eb9549a9a5",
+    "path": "modules/app-platform/main.tf",
+    "ranges": [
+      [
+        1,
+        330
+      ]
+    ],
+    "publishedPath": "evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/modules/app-platform/main.tf.md",
+    "sourceSha256": "d9a2eaad30ca4a7530c7ec1de82b0eff860698214c93af0e89752b08e9a1efed"
+  }
+]
