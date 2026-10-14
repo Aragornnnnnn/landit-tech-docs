@@ -117,7 +117,7 @@ main Queue visibility timeout은 현재 300초로 유지합니다. Consumer는 H
 
 기존 Push DLQ에는 Consumer 처리 실패와 Scheduler 전달 실패가 함께 들어갑니다. `SCHEDULE_ARN`, `ERROR_CODE` 등 Scheduler 오류 속성이 있는지 먼저 구분합니다. API 소비 역할에 DLQ 접근 권한을 추가한 구성은 아닙니다.
 
-복구는 캠페인 상태와 원본 Target Input을 확인한 단건만 대상으로 합니다. CANCELLED·COMPLETED 캠페인의 발송을 복제하지 않고, Scheduler envelope를 그대로 main Queue에 보내거나 혼합 DLQ 전체를 redrive하지 않습니다. 상세 승인·복구 절차는 [소스 Runbook](https://github.com/Aragornnnnnn/landit-tech-docs/blob/main/evidence/landit-iac/6e85e5f70b61919fb89fc777c10699eb9549a9a5/docs/push-notifications.md.md#source-lan-462-dlq-단건-복구-절차)을 따릅니다.
+복구는 캠페인 상태와 원본 Target Input을 확인한 단건만 대상으로 합니다. CANCELLED·COMPLETED 캠페인의 발송을 복제하지 않고, Scheduler envelope를 그대로 main Queue에 보내거나 혼합 DLQ 전체를 redrive하지 않습니다. 상세 실행 명령과 승인 절차는 비공개 내부 운영 문서에서 관리합니다.
 
 ## SES와 체험 종료 알림
 
